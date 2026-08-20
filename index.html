@@ -8,8 +8,8 @@
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
-    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: #000000;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -19,59 +19,77 @@
 
   .card {
     background: #ffffff;
-    border-radius: 20px;
-    max-width: 420px;
+    max-width: 440px;
     width: 100%;
-    padding: 48px 40px;
-    box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+    padding: 56px 44px;
     text-align: center;
+    border: 1px solid #e5e5e5;
+  }
+
+  .logo {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #000000;
+    margin-bottom: 40px;
+  }
+
+  .logo span {
+    font-weight: 300;
+    letter-spacing: 4px;
   }
 
   .avatar {
-    width: 84px;
-    height: 84px;
+    width: 88px;
+    height: 88px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    background: #000000;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
-    font-size: 32px;
-    font-weight: 700;
-    margin: 0 auto 24px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 0 auto 28px;
   }
 
   h1 {
     font-size: 26px;
-    color: #0f172a;
-    margin-bottom: 4px;
+    font-weight: 600;
+    color: #000000;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
   }
 
   .role {
-    color: #2563eb;
-    font-weight: 600;
-    font-size: 15px;
-    margin-bottom: 20px;
+    color: #000000;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
   }
 
   .company {
-    color: #64748b;
-    font-size: 14px;
-    margin-bottom: 24px;
-    letter-spacing: 0.3px;
+    color: #737373;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 28px;
   }
 
   .divider {
     height: 1px;
-    background: #e2e8f0;
-    margin: 24px 0;
+    background: #000000;
+    width: 40px;
+    margin: 0 auto 28px;
   }
 
   .description {
-    color: #334155;
+    color: #404040;
     font-size: 15px;
-    line-height: 1.6;
-    margin-bottom: 28px;
+    line-height: 1.7;
+    margin-bottom: 32px;
   }
 
   .tags {
@@ -79,34 +97,38 @@
     flex-wrap: wrap;
     gap: 8px;
     justify-content: center;
-    margin-bottom: 28px;
+    margin-bottom: 32px;
   }
 
   .tag {
-    background: #eff6ff;
-    color: #2563eb;
+    border: 1px solid #000000;
+    color: #000000;
     padding: 6px 14px;
-    border-radius: 999px;
-    font-size: 13px;
-    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
   }
 
   .contact {
-    background: #0f172a;
-    color: #fff;
-    border: none;
-    padding: 12px 28px;
-    border-radius: 10px;
-    font-size: 14px;
-    font-weight: 600;
-    cursor: default;
+    display: inline-block;
+    background: #000000;
+    color: #ffffff;
+    border: 1px solid #000000;
+    padding: 13px 32px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
   }
 </style>
 </head>
 <body>
   <div class="card">
-    <div class="avatar">L</div>
-    <h1>Lizie</h1>
+    <div class="logo">MA<span>ARCH</span></div>
+
+    <div class="avatar">LP</div>
+    <h1>Lizie P.</h1>
     <div class="role">Office Manager</div>
     <div class="company">MAARCH ARCHITECTS</div>
 
@@ -125,7 +147,7 @@
       <span class="tag">Accounting</span>
     </div>
 
-    <button class="contact">Get in touch</button>
+    <a href="mailto:info@maarch.net.au" class="contact">info@maarch.net.au</a>
   </div>
 </body>
 </html>
